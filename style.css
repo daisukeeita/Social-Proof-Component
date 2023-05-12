@@ -1,0 +1,197 @@
+:root {
+    --primary-color-800: hsl(300, 43%, 22%);
+    --primary-color-300: hsl(303, 10%, 53%);
+    --primary-color-100: hsl(300, 24%, 96%);
+
+    --accent-color-400: hsl(333, 80%, 67%);
+
+    --neutral-color-100: hsl(0, 0%, 100%);
+
+    --font-family-leagueSpartan: 'League Spartan', sans-serif;
+
+    --font-size-review: 1rem;
+    --font-size-rating: 1rem;
+    --font-size-heading: clamp(2.1875rem, calc(2.1875rem + ((1vw - 0.234375rem) * 1.4085)), 3.125rem);
+    --font-size-subHeading: 1rem;
+
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 1fr 50px;
+    justify-content: center;
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    padding-top: 80px;
+    /* word-break: break-all; */
+    background-image: 
+        url(images/bg-pattern-top-mobile.svg),
+        url(images/bg-pattern-bottom-mobile.svg);
+    background-repeat: 
+        no-repeat,
+        no-repeat;
+    background-position: 
+        top,
+        bottom;
+    background-size: 100%;
+    font-family: var(--font-family-leagueSpartan);
+}
+
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+.social-proof-container {
+    width: 87.47vw;
+    max-width: 328px;
+    margin-inline: auto;
+}
+
+/* Heading and Subheading Section */
+
+.heading-subHeading-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.heading {
+    display: block;
+    margin-bottom: 20px;
+    line-height: 0.8;
+    width: 76.22%;
+    margin-inline: auto;
+    color: var(--primary-color-800);
+    font-size: 39.2px;
+    font-weight: var(--font-weight-bold);
+}
+
+.sub-heading {
+    font-size: 17.5px;
+    line-height: 1.2;
+    color: var(--primary-color-300);
+    font-weight: var(--font-weight-medium);
+}
+
+/* Ratings Section */
+
+.ratings-section {
+    width: inherit;
+    max-width: inherit;
+    margin-bottom: 45px;
+}
+
+.rating-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 86px;
+    padding: 15px; /* This is for screen size 375px below */
+    border-radius: 10px;
+    gap: 10px;
+    overflow: hidden;
+    background-color: var(--primary-color-100);
+}
+
+.rating-container:not(:last-child) {
+    margin-bottom: 18px;
+}
+
+.stars-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+.rating-description { 
+    text-align: center;
+    color: var(--primary-color-800);
+    font-size: 17px;
+    font-weight: var(--font-weight-bold);
+}
+
+/* Review Section */
+
+.reviews-section {
+    width: inherit;
+    max-width: inherit;
+}
+
+.user-testimonial-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    min-height: 248px;
+    padding-block: 18px; /* This is for screen size 375px below */
+    border-radius: 10px;
+    overflow: hidden;
+    color: var(--neutral-color-100);
+    background-color: var(--primary-color-800);
+}
+
+.user-testimonial-container:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.user-info-container,
+.customer-testimonial {
+    width: 78.35%;
+    margin-inline: auto;
+}
+
+.user-info-container {
+    text-align: center; /* This is for screen size 375px below */
+}
+
+.user-info-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.user-icon {
+    width: 41px;
+    height: 41px;
+    border-radius: 50%;
+}
+
+.user-name-status-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-name {
+    display: block;
+    margin-bottom: -6px;
+    font-size: 16px;
+    font-weight: var(--font-weight-bold);
+}
+
+.user-status {
+    color: var(--accent-color-400);
+    font-size: 16px;
+    font-weight: var(--font-weight-regular);
+}
