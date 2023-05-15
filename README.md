@@ -80,3 +80,14 @@ I also used the Grid for the layout of the section. Applying the 'fluidity' in G
 ```
 
 Applying this technique is actually hard to implement especially if there's so much to manipulate. But it was satisfying once you finished the implementation.  
+
+### Useful resources
+
+- [Fluid Type](https://trentwalton.com/2012/06/19/fluid-type/)
+- [CSS-Tricks - Fluid Typography](https://css-tricks.com/snippets/css/fluid-typography/)
+- [CSS-Tricks - CSS Grid Layout](https://css-tricks.com/snippets/css/complete-guide-grid/#aa-fluid-columns-snippet)
+
+## Author
+
+- Frontend Mentor - [@daisukeeita](https://www.frontendmentor.io/profile/daisukeeita)
+- Github - [Andrei V.](https://github.com/daisukeeita)
