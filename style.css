@@ -212,6 +212,7 @@ picture {
             top left,
             bottom right;
         background-size: initial;
+        padding-top: 0;
     }
 
     .main-container {
