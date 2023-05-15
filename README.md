@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](images/social-proof-component-desktop.png)
-![](images/social-proof-component-mobile.png)
+![](images/social-proof-section-desktop.png)
+![](images/social-proof-section-mobile.png)
 
 ### Links
 
